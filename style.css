@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(30, 30, 30);
 }
 
 .top-left-box {
@@ -9,7 +9,7 @@
     width: 16rem;
     height: 16rem;
     clip-path: polygon(100% 0, 0 100%, 0 0);
-    background-image: linear-gradient(to bottom right, cyan, rgb(255, 0, 140), cyan);
+    background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 70%), rgba(255, 0, 140, 70%), rgba(0, 255, 255, 70%));
     border-top-left-radius: 4px;
 }
 
@@ -20,7 +20,7 @@
     width: 16rem;
     height: 16rem;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    background-image: linear-gradient(to bottom right, cyan, rgb(255, 0, 140), cyan);
+    background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 70%), rgba(255, 0, 140, 70%), rgba(0, 255, 255, 70%));
     border-bottom-right-radius: 4px;
 }
 
