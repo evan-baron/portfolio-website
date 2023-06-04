@@ -36,9 +36,10 @@
     display: grid;
     gap: 1rem;
     grid-template-areas:
-        'one one one four five'
+        'one one one one five'
         'two two two four five'
-        'three three three four five';
+        'two two two four five'
+        'three three three three five';
     color: white;
     z-index: 1;
     margin: auto;
