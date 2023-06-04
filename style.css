@@ -32,10 +32,41 @@
     /* border: 1px solid yellow; */
 }
 
-.main-content {
+.content-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        'one one one four five'
+        'two two two four five'
+        'three three three four five';
+    color: white;
     z-index: 1;
     margin: auto;
     width: 92%;
     height: 100%;
     border: 1px solid yellow;
+}
+
+.box {
+    border: 1px solid yellow;
+}
+
+.box-1 {
+    grid-area: one;
+}
+
+.box-2 {
+    grid-area: two;
+}
+
+.box-3 {
+    grid-area: three;
+}
+
+.box-4 {
+    grid-area: four;
+}
+
+.box-5 {
+    grid-area: five;
 }
