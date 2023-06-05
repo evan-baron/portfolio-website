@@ -47,13 +47,23 @@
 }
 
 .content-top {
-    border: 1px solid yellow;
+    display: flex;
+    padding: 1.5rem;
+    /* border: 1px solid yellow; */
     height: 22.5%;
     border-radius: 3px;
+    gap: 2rem;
+}
+
+img:first-child {
+    margin-right: auto;
+    width: 3rem;
+    height: 3rem;
 }
 
 img {
     width: 2rem;
+    height: 2rem;
 }
 
 .icon-white {
