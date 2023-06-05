@@ -73,10 +73,10 @@
     height: 3rem;
 }
 
-.img-box:first-child img:hover {
+/* .img-box:first-child img:hover {
     width: 3.5rem;
     height: 3.5rem;
-}
+} */
 
 img {
     width: 2rem;
