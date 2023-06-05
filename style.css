@@ -52,6 +52,20 @@
     border-radius: 3px;
 }
 
+img {
+    width: 2rem;
+}
+
+.icon-white {
+    opacity: 75%;
+}
+
+.icon-white:hover {
+    opacity: 100%;
+    transition: .3s;
+    cursor: pointer;
+}
+
 .content-middle {
     display: flex;
     gap: 1rem;
