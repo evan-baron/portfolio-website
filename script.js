@@ -109,7 +109,7 @@ function home() {
     }
 
     document.getElementById('project-title').innerHTML = 'Welcome';
-    document.getElementById('project-content').innerHTML = `Hello! My name is Evan Baron and I am a software engineer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software engineering. This is my portfolio page!<br><br>Thanks for stopping by!<br>
+    document.getElementById('project-content').innerHTML = `Hello! My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
     <br>
     <div class="sig"></div>
     Evan Baron`;
