@@ -2,7 +2,7 @@
     box-sizing: border-box;
     background-color: rgb(25, 25, 30);
     font-family: 'Montserrat', sans-serif;
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .top-left-box {
@@ -141,7 +141,7 @@ img {
     display: inline-block;
     width: fit-content;
     position: relative;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
 }
 
