@@ -187,4 +187,5 @@ span {
     padding: 2rem;
     /* border: 1px solid yellow; */
     height: 15%;
+    border-bottom-right-radius: 3px;
 }
