@@ -19,7 +19,7 @@
             <div class="content-container" id="content-container">
                 <div class="content-top" id="content-top">
                     <div class="img-box">
-                        <img class="icon-white" src="./home icon.png">
+                        <img class="icon-white" id="home" onclick=(home()) src="./home icon.png">
                     </div>
                     <div class="img-box">
                         <img class="icon-white" src="./email icon.png" >
@@ -33,18 +33,31 @@
                 </div>
                 <div class="content-middle" id="content-middle">
                     <div class="content-middle-left">
-                        <div class="cml-top">Project Name</div>
+                        <div class="cml-top" id="project-title">Welcome</div>
                         <div class="cml-bottom">
                             <div class="cml-bl">
                                 <div class="cml-bl-top">
-                                    <div class="cml-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.</div>
-                                </div>
-                                <div class="cml-bl-bottom">
-                                    <div class="cml-bl-list-item">
-                                        <span class="cml-bl-list-content">View Site</span>
+                                    <div class="cml-content" id="project-content">Hello! My name is Evan Baron and I am a software engineer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software engineering and this is my portfolio page!<br><br>Thanks for stopping by!<br>
+                                        <br>
+                                        <div class="sig"></div>
+                                        Evan Baron
                                     </div>
-                                    <div class="cml-bl-list-item">
-                                        <span class="cml-bl-list-content">Github</span>
+                                </div>
+                                <div class="cml-bl-bottom" id="plink-row">
+                                    <div class="cml-bl-list-item link" id="plink-1" test="1">
+                                        <span class="cml-bl-list-content" id="link-1"></span>
+                                    </div>
+                                    <div class="cml-bl-list-item link" id="plink-2" test="2">
+                                        <span class="cml-bl-list-content" id="link-2"></span>
+                                    </div>
+                                    <div class="cml-bl-list-item link" id="plink-3" test="3">
+                                        <span class="cml-bl-list-content" id="link-3"></span>
+                                    </div>
+                                    <div class="cml-bl-list-item link" id="plink-4" test="4">
+                                        <span class="cml-bl-list-content" id="link-4"></span>
+                                    </div>
+                                    <div class="cml-bl-list-item link" id="plink-5" test="5">
+                                        <span class="cml-bl-list-content" id="link-5"></span>
                                     </div>
                                 </div>
                             </div>
@@ -56,19 +69,19 @@
                             <div class="cmr-tlb"></div>
                             <div class="cmr-bottom-content">
                                 <div class="list-item">
-                                    <span class="list-content">Will</span>
+                                    <span class="list-content" id="lc-1" onclick="projectShow(1)"></span>
                                 </div>
                                 <div class="list-item">
-                                    <span class="list-content">Update</span>
+                                    <span class="list-content" id="lc-2" onclick="projectShow(2)"></span>
                                 </div>
                                 <div class="list-item">
-                                    <span class="list-content">As I</span>
+                                    <span class="list-content" id="lc-3" onclick="projectShow(3)"></span>
                                 </div>
                                 <div class="list-item">
-                                    <span class="list-content">Build More</span>
+                                    <span class="list-content" id="lc-4" onclick="projectShow(4)"></span>
                                 </div>
                                 <div class="list-item">
-                                    <span class="list-content">Websites</span>
+                                    <span class="list-content" id="lc-5" onclick="projectShow(5)"></span>
                                 </div>
                             </div>
                         </div>
