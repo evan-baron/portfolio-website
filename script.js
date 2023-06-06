@@ -131,9 +131,5 @@ function home() {
     <div class="sig"></div>
     Evan Baron`;
 
-    if (document.body.clientWidth <= 800 + 'px') {
-        projectTitle.style.fontSize = '2rem';
-    } else {
-        projectTitle.style.fontSize = '3rem';
-    }
+    projectTitle.style.fontSize = '3rem';
 }
