@@ -1,16 +1,43 @@
 let project = [
     {
+        name: 'Welcome_',
+        size: '3rem',
+        content: `Hello!<br><br>My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
+        <br>
+        <div class="sig"></div>
+        Evan Baron`,
+        links: [
+            {
+                title: 'About Me',
+                link: 'aboutMe()',
+                linkType: 'onclick'
+            },
+            {
+                title: 'Work History',
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
+            },
+            {
+                title: 'Github',
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
+            }
+        ]
+    },
+    {
         name: 'Will',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
             {
                 title: 'View Site',
-                link: '#'
+                link: '#',
+                linkType: 'href'
             },
             {
                 title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website'
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
             }
         ]
     },
@@ -21,7 +48,8 @@ let project = [
         links: [
             {
                 title: 'View Site',
-                link: '#'
+                link: '#',
+                linkType: 'href'
             }
         ]
     },
@@ -32,15 +60,18 @@ let project = [
         links: [
             {
                 title: 'View Site',
-                link: '#'
+                link: '#',
+                linkType: 'href'
             },
             {
                 title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website'
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
             },
             {
                 title: 'See in Google Play Store',
-                link: 'https://play.google.com/store/games'
+                link: 'https://play.google.com/store/games',
+                linkType: 'href'
             }
         ]
     },
@@ -51,11 +82,13 @@ let project = [
         links: [
             {
                 title: 'View Site',
-                link: '#'
+                link: '#',
+                linkType: 'href'
             },
             {
                 title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website'
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
             }
         ]
     },
@@ -66,11 +99,13 @@ let project = [
         links: [
             {
                 title: 'View Site',
-                link: '#'
+                link: '#',
+                linkType: 'href'
             },
             {
                 title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website'
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
             }
         ]
     }
@@ -90,11 +125,15 @@ function typewriter() {
 window.addEventListener("load", typewriter);
 
 for (let i = 0; i < project.length; i++) {
-    document.getElementById('lc-'+[i + 1]).innerHTML = project[i].name;
+    document.getElementById('lc-'+[i]).innerHTML = project[i].name;
 }
 
 let projectTitle = document.getElementById('project-title')
 let projectContent = document.getElementById('project-content')
+projectShow(0);
+
+projectTitle.innerHTML = project[0].name;
+projectContent.innerHTML = project[0].content;
 
 function projectShow(projNum) {
     let linkArr = document.getElementsByClassName('link');
@@ -103,14 +142,17 @@ function projectShow(projNum) {
     }
 
     for (let i = 0; i < project.length; i++) {
-        if (projNum - 1 == i) {
+        if (projNum == i) {
             projectTitle.innerHTML = project[i].name;
             projectContent.innerHTML = project[i].content;
             projectTitle.style.fontSize = project[i].size;
 
             for (let j = 0; j < project[i].links.length; j++) {
-                let linkTitle = document.getElementById('link-'+(j+1));
+                let linkTitle = document.getElementById('link-' + (j+1));
                 linkTitle.innerHTML = project[i].links[j].title;
+                let redirect = document.getElementById('redirect-' + (j+1));
+                redirect.setAttribute(project[i].links[j].linkType, project[i].links[j].link)
+                redirect.setAttribute('target', 'blank_');
                 let pLink = document.getElementById('plink-'+(j+1));
                 document.getElementById('plink-row').style.display = "flex";
                 pLink.style.display = 'inline-block';
@@ -123,6 +165,7 @@ function home() {
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
         linkArr[i].style.display = 'none';
+        linkArr[i].removeAttribute(project[i].links.linkType);
     }
 
     document.getElementById('project-title').innerHTML = 'Welcome_';

@@ -14,14 +14,19 @@
     <body>
         <div class="top-left-box"></div>
         <main class="main-container" id="main-container">
+            <div class="about-me-container" id="about-me-container">
+                <div class="about-me-background"></div>
+                <div class="about-me" id="about-me">
+                    test
+                </div>
+            </div>
             <div class="content-container" id="content-container">
-            
                 <div class="content-top" id="content-top">
                     <div class="img-box" id="hamburger-menu">
                         <img class="icon-white" id="hamburger" src="./hamburger menu.png">
                     </div>
                     <div class="img-box" id="home-icon">
-                        <img class="icon-white" id="home" onclick=(home()) src="./home icon.png">
+                        <img class="icon-white" id="home" onclick=(projectShow(0)) src="./home icon.png">
                     </div>
                     <div class="img-box">
                         <a href="mailto:egbaron@gmail.com"><img class="icon-white" src="./email icon.png"></a>
@@ -39,27 +44,23 @@
                         <div class="cml-bottom">
                             <div class="cml-bl">
                                 <div class="cml-bl-top">
-                                    <div class="cml-content" id="project-content">Hello!<br><br>My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
-                                        <br>
-                                        <div class="sig"></div>
-                                        Evan Baron
-                                    </div>
+                                    <div class="cml-content" id="project-content"></div>
                                 </div>
                                 <div class="cml-bl-bottom" id="plink-row">
-                                    <div class="cml-bl-list-item link" id="plink-1" test="1">
-                                        <span class="cml-bl-list-content" id="link-1"></span>
+                                    <div class="cml-bl-list-item link" id="plink-1">
+                                        <a id="redirect-1"><span class="cml-bl-list-content" id="link-1"></span></a>
                                     </div>
-                                    <div class="cml-bl-list-item link" id="plink-2" test="2">
-                                        <span class="cml-bl-list-content" id="link-2"></span>
+                                    <div class="cml-bl-list-item link" id="plink-2">
+                                        <a id="redirect-2"><span class="cml-bl-list-content" id="link-2"></span></a>
                                     </div>
-                                    <div class="cml-bl-list-item link" id="plink-3" test="3">
-                                        <span class="cml-bl-list-content" id="link-3"></span>
+                                    <div class="cml-bl-list-item link" id="plink-3">
+                                        <a id="redirect-3"><span class="cml-bl-list-content" id="link-3"></span></a>
                                     </div>
-                                    <div class="cml-bl-list-item link" id="plink-4" test="4">
-                                        <span class="cml-bl-list-content" id="link-4"></span>
+                                    <div class="cml-bl-list-item link" id="plink-4">
+                                        <a id="redirect-4"><span class="cml-bl-list-content" id="link-4"></span></a>
                                     </div>
-                                    <div class="cml-bl-list-item link" id="plink-5" test="5">
-                                        <span class="cml-bl-list-content" id="link-5"></span>
+                                    <div class="cml-bl-list-item link" id="plink-5">
+                                        <a id="redirect-5"><span class="cml-bl-list-content" id="link-5"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -70,6 +71,9 @@
                         <div class="cmr-bottom">
                             <div class="cmr-tlb"></div>
                             <div class="cmr-bottom-content">
+                                <div class="list-item first-project">
+                                    <span class="list-content" id="lc-0" onclick="projectShow(0)"></span>
+                                </div>
                                 <div class="list-item">
                                     <span class="list-content" id="lc-1" onclick="projectShow(1)"></span>
                                 </div>
