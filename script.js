@@ -9,13 +9,8 @@ let project = [
         links: [
             {
                 title: 'About Me',
-                link: 'aboutMe()',
+                link: "aboutMe()",
                 linkType: 'onclick'
-            },
-            {
-                title: 'Work History',
-                link: 'https://github.com/evan-baron/portfolio-website',
-                linkType: 'href'
             },
             {
                 title: 'Github',
@@ -175,4 +170,14 @@ function home() {
     Evan Baron`;
 
     projectTitle.style.fontSize = '3rem';
+}
+
+let aboutMeDisplay = document.getElementById('about-me-container');
+
+function aboutMe() {
+    aboutMeDisplay.style.display = 'block';
+}
+
+function disappear() {
+    aboutMeDisplay.style.display = 'none';
 }
