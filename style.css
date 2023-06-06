@@ -358,12 +358,12 @@ span {
         height: 2rem;
     }
 
-    .img-box:nth-child(2) {
+    #home-icon {
         display: none;
         margin-right: auto;
     }
     
-    .img-box:nth-child(2) img {
+    #home-icon img {
         display: none;
         width: 3rem;
         height: 3rem;
