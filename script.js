@@ -1,6 +1,7 @@
 let project = [
     {
         name: 'Will',
+        size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
             {
@@ -15,6 +16,7 @@ let project = [
     },
     {
         name: 'Update',
+        size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas.',
         links: [
             {
@@ -25,6 +27,7 @@ let project = [
     },
     {
         name: 'As I',
+        size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris.',
         links: [
             {
@@ -43,6 +46,7 @@ let project = [
     },
     {
         name: 'Build More',
+        size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
             {
@@ -57,6 +61,7 @@ let project = [
     },
     {
         name: 'Websites',
+        size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
             {
@@ -92,8 +97,6 @@ function projectShow(projNum) {
     let projectTitle = document.getElementById('project-title')
     let projectContent = document.getElementById('project-content')
 
-    projectTitle.style.fontSize = '2rem';
-
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
         linkArr[i].style.display = 'none';
@@ -103,6 +106,7 @@ function projectShow(projNum) {
         if (projNum - 1 == i) {
             projectTitle.innerHTML = project[i].name;
             projectContent.innerHTML = project[i].content;
+            projectTitle.style.fontSize = project[i].size;
 
             for (let j = 0; j < project[i].links.length; j++) {
                 let linkTitle = document.getElementById('link-'+(j+1));
