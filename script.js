@@ -90,7 +90,7 @@ function projectShow(projNum) {
         if (projNum - 1 == i) {
             projectTitle.innerHTML = project[i].name;
             projectContent.innerHTML = project[i].content;
-            console.log(project[i].links.length);
+            
             for (let j = 0; j < project[i].links.length; j++) {
                 let linkTitle = document.getElementById('link-'+(j+1));
                 linkTitle.innerHTML = project[i].links[j].title;
