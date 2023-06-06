@@ -130,5 +130,9 @@ function home() {
     <br>
     <div class="sig"></div>
     Evan Baron`;
-    document.getElementById('project-title').style.fontSize = '3rem';
+    if (screen.width > '800px') {
+        document.getElementById('project-title').style.fontSize = '3rem';
+    } else {
+        document.getElementById('project-title').style.fontSize = '2rem';
+    }
 }
