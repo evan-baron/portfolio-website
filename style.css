@@ -262,7 +262,7 @@ span {
     border-bottom-right-radius: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .content-middle {
         justify-content: center;
         height: 70%;
