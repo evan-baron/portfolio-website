@@ -262,8 +262,6 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-    * {
-    }
 
     .content-container {
         justify-content: space-between;
