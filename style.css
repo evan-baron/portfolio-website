@@ -130,6 +130,16 @@ img {
     align-items: center;
 }
 
+.cml-top span {
+    animation: blinker 1s linear 6;
+}
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
 .cml-bottom {
     display: flex;
     align-items: center;
@@ -157,6 +167,15 @@ img {
     padding-bottom: 1px;
     background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
 }
+
+/* .cml-bl-list-content {
+    display: inline-block;
+} */
+
+span {
+    display: inline-block;
+}
+
 
 .cml-bl-list-content:hover {
     color: white;
@@ -231,10 +250,6 @@ img {
     letter-spacing: .05rem;
     transition: .3s;
     cursor: pointer;
-}
-
-span {
-    display: inline-block;
 }
 
 .content-bottom {

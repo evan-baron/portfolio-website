@@ -71,6 +71,19 @@ let project = [
     }
 ];
 
+let messageArray = ["Welcome"];
+let textPosition = 0;
+let speed = 80;
+
+typewriter = () => {
+    document.getElementById("project-title").innerHTML = messageArray[0].substring(0, textPosition) + "<span>_</span>";
+    if (textPosition++ != messageArray[0].length) {
+        setTimeout(typewriter, speed);
+    }
+}
+
+window.addEventListener("load", typewriter);
+
 for (let i = 0; i < project.length; i++) {
     document.getElementById('lc-'+[i + 1]).innerHTML = project[i].name;
 }
@@ -90,7 +103,7 @@ function projectShow(projNum) {
         if (projNum - 1 == i) {
             projectTitle.innerHTML = project[i].name;
             projectContent.innerHTML = project[i].content;
-            
+
             for (let j = 0; j < project[i].links.length; j++) {
                 let linkTitle = document.getElementById('link-'+(j+1));
                 linkTitle.innerHTML = project[i].links[j].title;
@@ -108,7 +121,7 @@ function home() {
         linkArr[i].style.display = 'none';
     }
 
-    document.getElementById('project-title').innerHTML = 'Welcome';
+    document.getElementById('project-title').innerHTML = 'Welcome_';
     document.getElementById('project-content').innerHTML = `Hello! My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
     <br>
     <div class="sig"></div>
