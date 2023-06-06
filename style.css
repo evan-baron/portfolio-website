@@ -276,6 +276,8 @@ span {
     }
 
     .content-container {
+        height: 100%;
+        width: 100%;
         justify-content: space-between;
         padding-bottom: 1rem;
         gap: 0;
