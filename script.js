@@ -75,7 +75,7 @@ let messageArray = ["Welcome"];
 let textPosition = 0;
 let speed = 80;
 
-typewriter = () => {
+function typewriter() {
     document.getElementById("project-title").innerHTML = messageArray[0].substring(0, textPosition) + "<span>_</span>";
     if (textPosition++ != messageArray[0].length) {
         setTimeout(typewriter, speed);

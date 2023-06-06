@@ -131,10 +131,10 @@ img {
 }
 
 .cml-top span {
-    animation: blinker 1s linear 6;
+    animation: blinker 1s linear 5;
 }
 
-@keyframes blinker{
+@keyframes blinker {
     50%{
         opacity: 0;
     }
