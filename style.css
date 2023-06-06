@@ -283,7 +283,7 @@ span {
 
     #project-title {
         font-size: 2rem !important;
-        margin: 0;
+        margin-bottom: 1rem;
     }
 
     .cml-top {
