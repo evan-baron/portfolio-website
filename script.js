@@ -93,10 +93,10 @@ for (let i = 0; i < project.length; i++) {
     document.getElementById('lc-'+[i + 1]).innerHTML = project[i].name;
 }
 
-function projectShow(projNum) {
-    let projectTitle = document.getElementById('project-title')
-    let projectContent = document.getElementById('project-content')
+let projectTitle = document.getElementById('project-title')
+let projectContent = document.getElementById('project-content')
 
+function projectShow(projNum) {
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
         linkArr[i].style.display = 'none';
@@ -123,6 +123,7 @@ function home() {
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
         linkArr[i].style.display = 'none';
+        projectTitle.style.fontSize = '3rem';
     }
 
     document.getElementById('project-title').innerHTML = 'Welcome_';
@@ -130,6 +131,6 @@ function home() {
     <br>
     <div class="sig"></div>
     Evan Baron`;
-    
-    document.getElementById('project-title').style.fontSize = '3rem';
+
+    projectTitle.style.fontSize = '3rem';
 }

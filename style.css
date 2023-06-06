@@ -263,6 +263,10 @@ span {
 
 @media screen and (max-width: 800px) {
 
+    .main-container {
+        padding: 0;
+    }
+
     .content-container {
         justify-content: space-between;
         padding-bottom: 1rem;
@@ -279,13 +283,11 @@ span {
     }
 
     .top-left-box {
-        height: 200px;
-        width: 200px;
+        display: none;
     }
 
     .bottom-right-box {
-        height: 200px;
-        width: 200px;
+        display: none;
     }
 
     .content-top {
