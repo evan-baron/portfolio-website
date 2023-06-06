@@ -123,7 +123,6 @@ function home() {
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
         linkArr[i].style.display = 'none';
-        projectTitle.style.fontSize = '3rem';
     }
 
     document.getElementById('project-title').innerHTML = 'Welcome_';
@@ -132,5 +131,9 @@ function home() {
     <div class="sig"></div>
     Evan Baron`;
 
-    projectTitle.style.fontSize = '3rem';
+    if (document.body.clientWidth <= 800 + 'px') {
+        projectTitle.style.fontSize = '3rem';
+    } else {
+        projectTitle.style.fontSize = '2rem';
+    }
 }
