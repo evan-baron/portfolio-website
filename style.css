@@ -47,6 +47,13 @@
     border-radius: 3px;
 }
 
+.icon-underline {
+    display: none;
+    position: relative;
+    height: 1px;
+    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+}
+
 .content-top {
     display: flex;
     padding: 1.5rem;
@@ -265,6 +272,7 @@ span {
 
     .main-container {
         padding: 0;
+        height: 95vh;
     }
 
     .content-container {
@@ -335,5 +343,12 @@ span {
     img {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .icon-underline {
+        display: block;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: -4rem;
     }
 }
