@@ -263,6 +263,10 @@ span {
 }
 
 @media screen and (max-width: 800px) {
+    * {
+        height: 1000px;
+    }
+
     .content-middle {
         justify-content: center;
         height: 70%;
