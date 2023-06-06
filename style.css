@@ -7,8 +7,8 @@
 
 .top-left-box {
     position: absolute;
-    left: calc(4% - 2px);
-    top: calc(4% - 2px);
+    left: calc(4% + 5px);
+    top: calc(4% + 5px);
     width: 300px;
     height: 300px;
     clip-path: polygon(100% 0, 0 100%, 0 0);
@@ -18,8 +18,8 @@
 
 .bottom-right-box {
     position: absolute;
-    right: calc(4% - 2px);
-    bottom: calc(4% - 2px);
+    right: calc(4% + 5px);
+    bottom: calc(4% + 5px);
     width: 300px;
     height: 300px;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
