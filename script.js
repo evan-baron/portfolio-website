@@ -78,6 +78,54 @@ let project = [
     }
 ];
 
+let skills = [
+    {
+        name: 'HTML',
+        proficiency: .95,
+    },
+    {
+        name: 'CSS',
+        proficiency: .7,
+    },
+    {
+        name: 'JavaScript',
+        proficiency: .35,
+    },
+    {
+        name: 'Sql',
+        proficiency: .75,
+    }
+]
+
+for (let i = 0; i<skills.length; i++) {
+    let barDiv = document.createElement('div')
+    barDiv.setAttribute('class', `bar acg-bar-${i}`)
+    barDiv.setAttribute('id', `acg-bar-${i}`)
+    barDiv.setAttribute('onmouseover', 'hover()')
+    barDiv.setAttribute('onmouseout', 'reset()')
+    document.getElementById('acg-background').appendChild(barDiv)
+    barDiv.style.width = `${500 * skills[i].proficiency}px`;
+
+    let labelDiv = document.createElement('div')
+    labelDiv.setAttribute('id', `label-${i}`)
+    labelDiv.setAttribute('onmouseover', 'hover()')
+    labelDiv.setAttribute('onmouseout', 'reset()')
+    document.getElementById('acg-label-container').appendChild(labelDiv)
+    labelDiv.innerHTML = skills[i].name;
+} 
+
+// function hover() {
+//     document.getElementById('acg-bar-'+i).style.opacity = '100%';
+//     document.getElementById('label-'+i).style.opacity = '100%';
+//     document.getElementById('label-'+i).style.fontWeight = 'bold';
+// }   
+
+// function reset() {
+//     document.getElementById('acg-bar-'+i).style.opacity = '75%';
+//     document.getElementById('label-'+i).style.opacity = '85%';
+//     document.getElementById('label-'+i).style.fontWeight = 'normal';
+// }   
+
 let messageArray = ["Welcome"];
 let textPosition = 0;
 let speed = 80;
