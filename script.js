@@ -97,35 +97,6 @@ let skills = [
     }
 ]
 
-for (let i = 0; i<skills.length; i++) {
-    let barDiv = document.createElement('div')
-    barDiv.setAttribute('class', `bar acg-bar-${i}`)
-    barDiv.setAttribute('id', `acg-bar-${i}`)
-    barDiv.setAttribute('onmouseover', 'hover()')
-    barDiv.setAttribute('onmouseout', 'reset()')
-    document.getElementById('acg-background').appendChild(barDiv)
-    barDiv.style.width = `${500 * skills[i].proficiency}px`;
-
-    let labelDiv = document.createElement('div')
-    labelDiv.setAttribute('id', `label-${i}`)
-    labelDiv.setAttribute('onmouseover', 'hover()')
-    labelDiv.setAttribute('onmouseout', 'reset()')
-    document.getElementById('acg-label-container').appendChild(labelDiv)
-    labelDiv.innerHTML = skills[i].name;
-} 
-
-// function hover() {
-//     document.getElementById('acg-bar-'+i).style.opacity = '100%';
-//     document.getElementById('label-'+i).style.opacity = '100%';
-//     document.getElementById('label-'+i).style.fontWeight = 'bold';
-// }   
-
-// function reset() {
-//     document.getElementById('acg-bar-'+i).style.opacity = '75%';
-//     document.getElementById('label-'+i).style.opacity = '85%';
-//     document.getElementById('label-'+i).style.fontWeight = 'normal';
-// }   
-
 let messageArray = ["Welcome"];
 let textPosition = 0;
 let speed = 80;
@@ -186,8 +157,41 @@ let aboutMeDisplay = document.getElementById('about-me-container');
 
 function aboutMe() {
     aboutMeDisplay.style.display = 'block';
+
+    for (let i = 0; i<skills.length; i++) {
+
+        let barDiv = document.createElement('div')
+        barDiv.setAttribute('class', `bar acg-bar-${i} row-${i}`)
+        barDiv.setAttribute('id', `acg-bar-${i}`)
+        barDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
+        barDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
+        document.getElementById('acg-background').appendChild(barDiv)
+        barDiv.style.width = `${500 * skills[i].proficiency}px`;
+    
+        let labelDiv = document.createElement('div')
+        labelDiv.setAttribute('class', `row-${i}`)
+        labelDiv.setAttribute('id', `label-${i}`)
+        labelDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
+        labelDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
+        document.getElementById('acg-label-container').appendChild(labelDiv)
+        labelDiv.innerHTML = skills[i].name;
+    } 
+}
+
+function toggleHighlight(className, mode) {
+    let otherArr = document.getElementsByClassName(className);
+    for (let i = 0; i<otherArr.length; i++) {
+        let curObj = otherArr[i]
+        curObj.style.opacity = (mode == 'over' ? '100%' : '75%')
+        curObj.style.fontWeight = (mode == 'over' ? 'bold' : 'normal')
+    }
 }
 
 function disappear() {
     aboutMeDisplay.style.display = 'none';
+
+    for (let i = 0; i<skills.length; i++) {
+        document.getElementById('acg-bar-'+i).remove();
+        document.getElementById('label-'+i).remove();
+    }
 }
