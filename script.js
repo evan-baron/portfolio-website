@@ -26,7 +26,7 @@ let project = [
         links: [
             {
                 title: 'View Site',
-                link: '#',
+                link: 'https://www.google.com',
                 linkType: 'href'
             },
             {
