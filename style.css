@@ -320,6 +320,14 @@ span {
     display: none;
 }
 
+@media screen and (max-width: 1000px) {
+    
+    #project-title {
+        font-size: 3rem !important;
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .main-container {

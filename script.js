@@ -1,26 +1,26 @@
 let project = [
     {
         name: 'Welcome_',
-        size: '3rem',
+        size: '5rem',
         content: `Hello!<br><br>My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
         <br>
         <div class="sig"></div>
         Evan Baron`,
         links: [
-            {
-                title: 'About Me',
-                link: "aboutMe()",
-                linkType: 'onclick'
-            },
-            {
-                title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website',
-                linkType: 'href'
-            }
+            // {
+            //     title: 'About Me',
+            //     link: "aboutMe()",
+            //     linkType: 'onclick'
+            // },
+            // {
+            //     title: 'Github',
+            //     link: 'https://github.com/evan-baron/portfolio-website',
+            //     linkType: 'href'
+            // }
         ]
     },
     {
-        name: 'Will',
+        name: 'Website 1',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
@@ -37,7 +37,7 @@ let project = [
         ]
     },
     {
-        name: 'Update',
+        name: 'Website 2',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas.',
         links: [
@@ -49,7 +49,7 @@ let project = [
         ]
     },
     {
-        name: 'As I',
+        name: 'Website 3',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris.',
         links: [
@@ -71,24 +71,7 @@ let project = [
         ]
     },
     {
-        name: 'Build More',
-        size: '2rem',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
-        links: [
-            {
-                title: 'View Site',
-                link: '#',
-                linkType: 'href'
-            },
-            {
-                title: 'Github',
-                link: 'https://github.com/evan-baron/portfolio-website',
-                linkType: 'href'
-            }
-        ]
-    },
-    {
-        name: 'Websites',
+        name: 'Website 4',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
