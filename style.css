@@ -35,7 +35,7 @@
 }
 
 .about-me-container {
-    display: none;
+    display: block;
 }
 
 .about-me-background {
@@ -51,6 +51,7 @@
     z-index: 3;
     position: absolute;
     width: 80%;
+    max-width: 1000px;
     height: 75%;
     left: 10%;
     top: 12.5%;
@@ -322,6 +323,14 @@ span {
 
 .first-project {
     display: none;
+}
+
+@media screen and (min-width: 1250px) {
+
+    .about-me {
+        left: calc(.5 * (100% - 1000px));
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
