@@ -251,13 +251,12 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     width: 30%;
     border-radius: 3px;
 }
 
 .cmr-top {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -405,11 +404,6 @@ span {
     }
     #hamburger-menu {
         display: flex;
-    }
-
-    .img-box:first-child {
-        display: flex;
-        margin-right: auto;
     }
     
     .img-box:first-child img {
