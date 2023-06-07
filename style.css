@@ -177,6 +177,10 @@ img {
     border-radius: 3px;
 }
 
+.mobile-content {
+    display: none;
+}
+
 .content-middle-left {
     display: flex;
     flex-direction: column;
@@ -321,7 +325,7 @@ span {
 }
 
 @media screen and (max-width: 1000px) {
-    
+
     #project-title {
         font-size: 3rem !important;
         margin-bottom: 1rem;
@@ -374,6 +378,14 @@ span {
     .content-middle {
         justify-content: center;
         height: auto;
+    }
+
+    .mobile-content {
+        display: block;
+    }
+
+    .cml-content {
+        display: none;
     }
 
     .content-middle-right {
