@@ -437,7 +437,7 @@ span {
     
     .bottom-right-box {
         right: calc(4% + 5px);
-        top: calc(415px);
+        top: 415px;
     }
 
 }
