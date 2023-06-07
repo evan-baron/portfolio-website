@@ -30,6 +30,8 @@
 .main-container {
     display: flex;
     height: 100vh;
+    min-height: 750px;
+    overflow-y: scroll;
     width: 100%;
 }
 
@@ -119,6 +121,7 @@
     display: flex;
     padding: 1.5rem;
     height: 22.5%;
+    min-height: 122px;
     border-radius: 3px;
 }
 
@@ -311,6 +314,7 @@ span {
     justify-content: end;
     padding: 2rem;
     height: 15%;
+    min-height: 90px;
     border-bottom-right-radius: 3px;
 }
 
@@ -422,4 +426,18 @@ span {
     #home-icon img {
         display: none;
     }
+}
+
+@media screen and (max-height: 750px) {
+    
+    .top-left-box {
+        left: calc(4% + 5px);
+        top: 35px;
+    }
+    
+    .bottom-right-box {
+        right: calc(4% + 5px);
+        top: calc(415px);
+    }
+
 }
