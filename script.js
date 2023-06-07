@@ -146,6 +146,12 @@ function projectShow(projNum) {
                 let linkTitle = document.getElementById('link-' + (j+1));
                 linkTitle.innerHTML = project[i].links[j].title;
                 let redirect = document.getElementById('redirect-' + (j+1));
+
+                if (redirect.hasAttribute('href') || redirect.hasAttribute('onclick')) {
+                    redirect.removeAttribute('href')
+                    redirect.removeAttribute('onclick')
+                }
+
                 redirect.setAttribute(project[i].links[j].linkType, project[i].links[j].link)
                 redirect.setAttribute('target', 'blank_');
                 let pLink = document.getElementById('plink-'+(j+1));
@@ -154,22 +160,6 @@ function projectShow(projNum) {
             }
         }
     }
-}
-
-function home() {
-    let linkArr = document.getElementsByClassName('link');
-    for (let i = 0; i < linkArr.length; i++) {
-        linkArr[i].style.display = 'none';
-        linkArr[i].removeAttribute(project[i].links.linkType);
-    }
-
-    document.getElementById('project-title').innerHTML = 'Welcome_';
-    document.getElementById('project-content').innerHTML = `Hello!<br><br>My name is Evan Baron and I am a software developer! I started my career in sales and have a rich understanding of how to work with clients, organize projects, and meet deadlines. I am transitioning out of sales into software development. This is my portfolio page!<br><br>Thanks for stopping by!<br>
-    <br>
-    <div class="sig"></div>
-    Evan Baron`;
-
-    projectTitle.style.fontSize = '3rem';
 }
 
 let aboutMeDisplay = document.getElementById('about-me-container');
