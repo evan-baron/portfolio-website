@@ -428,10 +428,6 @@ span {
 }
 
 @media screen and (max-height: 750px) {
-
-    /* .main-container {
-        overflow-y: scroll;
-    } */
     
     .top-left-box {
         left: calc(4% + 5px);
