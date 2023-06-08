@@ -4,7 +4,7 @@ let project = [
         size: '5rem',
         content: `Hello!<br><br>My name is Evan Baron and I am a junior software developer! I am transitioning my career out of sales and into software development. I have a rich understanding of how to work with clients, organize projects, and meet deadlines. For more information about my background and abilities, click the 'About' link to the right or find it in the drop down if on mobile!<br><br>Thanks for stopping by!<br>
         <br>
-        <div class="sig"></div>
+        <div class='sig'></div>
         Evan Baron`,
         links: []
     },
@@ -101,19 +101,19 @@ let skills = [
     }
 ]
 
-let messageArray = ["Welcome"];
+let messageArray = ['Welcome'];
 let textPosition = 0;
 let speed = 80;
 
 //typewriter effect
 function typewriter() {
-    document.getElementById("project-title").innerHTML = messageArray[0].substring(0, textPosition) + "<span>_</span>";
+    document.getElementById('project-title').innerHTML = messageArray[0].substring(0, textPosition) + '<span>_</span>';
     if (textPosition++ != messageArray[0].length) {
         setTimeout(typewriter, speed);
     }
 }
 
-window.addEventListener("load", typewriter);
+window.addEventListener('load', typewriter);
 
 for (let i = 0; i < project.length; i++) {
     document.getElementById('lc-'+[i]).innerHTML = project[i].name;
@@ -152,7 +152,7 @@ function projectShow(projNum) {
                 redirect.setAttribute(project[i].links[j].linkType, project[i].links[j].link)
                 redirect.setAttribute('target', 'blank_');
                 let pLink = document.getElementById('plink-'+(j+1));
-                document.getElementById('plink-row').style.display = "flex";
+                document.getElementById('plink-row').style.display = 'flex';
                 pLink.style.display = 'inline-block';
             }
         }
@@ -205,10 +205,22 @@ function disappear() {
     }
 }
 
+//hamburger menu function
+function hamburger() {
+    let dropdown = document.getElementById('dropdown-menu');
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+        document.getElementById('hamburger-background').style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
+        document.getElementById('hamburger-background').style.display = 'block';
+    }
+}
+
 //measuring width of text
 function getTextWidth(text, font) {
-    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
-    const context = canvas.getContext("2d");
+    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
+    const context = canvas.getContext('2d');
     context.font = font;
     const metrics = context.measureText(text);
     return metrics.width;

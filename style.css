@@ -45,6 +45,28 @@
     padding: 16px 16px 15px 16px;
 }
 
+.hamburger-menu-background {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 40%;
+    min-height: 750px;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(25, 25, 30);
+    height: 400px;
+    width: 250px;
+    margin-top: 1px;
+    box-shadow: 25px 25px 50px black;
+}
+
 .about-me-container {
     display: none;
 }
