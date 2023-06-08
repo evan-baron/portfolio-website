@@ -65,6 +65,10 @@
     gap: 2rem;
 }
 
+.about-top-container div span {
+    cursor: auto !important;
+}
+
 .about-content-container {
     display: flex;
     justify-content: space-between;
