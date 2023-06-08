@@ -101,6 +101,7 @@ let messageArray = ["Welcome"];
 let textPosition = 0;
 let speed = 80;
 
+//typewriter effect
 function typewriter() {
     document.getElementById("project-title").innerHTML = messageArray[0].substring(0, textPosition) + "<span>_</span>";
     if (textPosition++ != messageArray[0].length) {
@@ -121,6 +122,7 @@ projectShow(0);
 projectTitle.innerHTML = project[0].name;
 projectContent.innerHTML = project[0].content;
 
+//shows and switches between projects
 function projectShow(projNum) {
     let linkArr = document.getElementsByClassName('link');
     for (let i = 0; i < linkArr.length; i++) {
@@ -155,6 +157,7 @@ function projectShow(projNum) {
 
 let aboutMeDisplay = document.getElementById('about-me-container');
 
+//makes aboutme appear
 function aboutMe() {
     aboutMeDisplay.style.display = 'block';
 
@@ -166,7 +169,7 @@ function aboutMe() {
         barDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
         barDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
         document.getElementById('acg-background').appendChild(barDiv)
-        barDiv.style.width = `${500 * skills[i].proficiency}px`;
+        barDiv.style.width = `${400 * skills[i].proficiency}px`;
     
         let labelDiv = document.createElement('div')
         labelDiv.setAttribute('class', `row-${i}`)
@@ -178,6 +181,7 @@ function aboutMe() {
     } 
 }
 
+//makes bars and labels on graph glow
 function toggleHighlight(className, mode) {
     let otherArr = document.getElementsByClassName(className);
     for (let i = 0; i<otherArr.length; i++) {
@@ -187,6 +191,7 @@ function toggleHighlight(className, mode) {
     }
 }
 
+//makes aboutme disappear
 function disappear() {
     aboutMeDisplay.style.display = 'none';
 
@@ -194,4 +199,25 @@ function disappear() {
         document.getElementById('acg-bar-'+i).remove();
         document.getElementById('label-'+i).remove();
     }
+}
+
+//measuring width of text
+function getTextWidth(text, font) {
+    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+    const context = canvas.getContext("2d");
+    context.font = font;
+    const metrics = context.measureText(text);
+    return metrics.width;
+}
+    
+function getCssStyle(element, prop) {
+        return window.getComputedStyle(element, null).getPropertyValue(prop);
+}
+    
+function getCanvasFont(el = document.body) {
+    const fontWeight = getCssStyle(el, 'font-weight') || 'normal';
+    const fontSize = getCssStyle(el, 'font-size') || '16px';
+    const fontFamily = getCssStyle(el, 'font-family') || 'Times New Roman';
+    
+    return `${fontWeight} ${fontSize} ${fontFamily}`;
 }
