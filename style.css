@@ -62,6 +62,7 @@
     z-index: 2;
     background-color: rgb(25, 25, 30);
     height: 0px;
+    overflow: hidden;
     width: 250px;
     margin-top: 1px;
     box-shadow: 25px 25px 50px black;
