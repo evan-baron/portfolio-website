@@ -207,15 +207,18 @@ function disappear() {
 
 //hamburger menu function
 function hamburger() {
-    let dropdown = document.getElementById('dropdown-menu');
-    if (dropdown.style.height == '300px') {
-        dropdown.style.height = '0px';
-        document.getElementById('hamburger-background').style.display = 'none';
-        document.getElementById('hamburger-background').style.boxShadow = 'none';
+    let content = document.getElementById('dropdown-container');
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+      document.getElementById('hamburger-background').style.display = 'none';
+      document.getElementById('hamburger-background').style.boxShadow = 'none';
     } else {
-        dropdown.style.height = '300px';
-        document.getElementById('hamburger-background').style.display = 'block';
-        document.getElementById('hamburger-background').style.boxShadow = 'inset 0 25px 50px black';
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      document.getElementById('hamburger-background').style.display = 'block';
+      document.getElementById('hamburger-background').style.boxShadow = 'inset 0 25px 25px black';
     }
 }
 

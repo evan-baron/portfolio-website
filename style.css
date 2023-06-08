@@ -56,13 +56,22 @@
     margin-top: 1px;
 }
 
-.dropdown-menu {
+.dropdown-container {
     display: block;
     position: absolute;
     z-index: 2;
-    background-color: rgb(25, 25, 30);
-    height: 0px;
+    margin-top: 1px;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    box-shadow: 25px 25px 50px black;
+}
+
+.dropdown-menu {
+    display: block;
+    z-index: 2;
+    background-color: rgb(25, 25, 30);
+    height: 400px;
     width: 250px;
     margin-top: 1px;
     box-shadow: 25px 25px 50px black;
