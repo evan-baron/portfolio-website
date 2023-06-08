@@ -190,7 +190,7 @@ function toggleHighlight(className, mode) {
     let otherArr = document.getElementsByClassName(className);
     for (let i = 0; i<otherArr.length; i++) {
         let curObj = otherArr[i]
-        curObj.style.opacity = (mode == 'over' ? '100%' : '75%')
+        curObj.style.opacity = (mode == 'over' ? '100%' : '85%')
         curObj.style.fontWeight = (mode == 'over' ? 'bold' : 'normal')
     }
 }
