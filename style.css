@@ -12,7 +12,7 @@
     width: 300px;
     height: 300px;
     clip-path: polygon(100% 0, 0 100%, 0 0);
-    background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 80%), rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 0, 80%), rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
     border-top-left-radius: 5px;
 }
 
@@ -23,7 +23,7 @@
     width: 300px;
     height: 300px;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 80%), rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 0, 80%), rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
     border-bottom-right-radius: 5px;
 }
 
@@ -154,7 +154,7 @@ ul a {
 }
 
 .bar {
-    background-image: linear-gradient(90deg, rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(90deg, rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
     opacity: 75%;
     background-size: 400px;
     height: 30px;
@@ -178,7 +178,7 @@ ul a {
 
 .close:hover {
     cursor: pointer;
-    background-image: linear-gradient(90deg, rgba(255, 0, 140, 100%), rgba(0, 255, 255, 100%));
+    background-image: linear-gradient(90deg, rgba(255, 0, 140, 100%), rgba(255, 255, 0, 100%));
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -197,7 +197,7 @@ ul a {
     width: fit-content;
     position: relative;
     padding-bottom: 1px;
-    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
 }
 
 .content-container {
@@ -314,7 +314,7 @@ img {
     display: inline-block;
     position: relative;
     padding-left: 2px;
-    background-image: linear-gradient( rgba(0, 255, 255, 80%), rgba(255, 0, 140, 80%));
+    background-image: linear-gradient( rgba(255, 255, 0, 80%), rgba(255, 0, 140, 80%));
 }
 
 #plink-row {
@@ -328,7 +328,7 @@ img {
     width: fit-content;
     position: relative;
     padding-bottom: 1px;
-    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
 }
 
 span {
@@ -372,7 +372,7 @@ span {
     width: 115px;
     height: 115px;
     clip-path: polygon(100% 0, 0 100%, 0 0);
-    background-image: linear-gradient(to bottom right, rgba(0, 255, 255, 80%), rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 0, 80%), rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
     border-top-left-radius: 10px;
 }
 
@@ -394,7 +394,7 @@ span {
     width: fit-content;
     position: relative;
     padding-bottom: 1px;
-    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(0, 255, 255, 80%));
+    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
 }
 
 .list-content:hover {
