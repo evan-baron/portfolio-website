@@ -222,6 +222,12 @@ function hamburger() {
     }
 }
 
+function hamburgerAway() {
+    document.getElementById('dropdown-container').style.maxHeight = null;
+    document.getElementById('hamburger-background').style.display = 'none';
+    document.getElementById('hamburger-background').style.boxShadow = 'none';
+}
+
 //measuring width of text
 function getTextWidth(text, font) {
     const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
