@@ -211,9 +211,11 @@ function hamburger() {
     if (dropdown.style.display === 'block') {
         dropdown.style.display = 'none';
         document.getElementById('hamburger-background').style.display = 'none';
+        document.getElementById('nav-bar').style.boxShadow = 'none';
     } else {
         dropdown.style.display = 'block';
         document.getElementById('hamburger-background').style.display = 'block';
+        document.getElementById('hamburger-background').style.boxShadow = 'inset 0 25px 50px black';
     }
 }
 

@@ -56,6 +56,31 @@
     margin-top: 1px;
 }
 
+/* .nav-mask {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 40%;
+    height: 1px;
+    width: calc(100% - 250px);
+    top: 79px;
+    right: 0;
+    box-shadow: inset 25px 25px 50px black;
+}
+
+.nav-mask2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 40%;
+    height: 79px;
+    width: calc(100% - 80px);
+    top: 0;
+    right: 0;
+} */
+
 .dropdown-menu {
     display: none;
     position: absolute;
