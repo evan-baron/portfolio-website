@@ -52,9 +52,8 @@
     position: absolute;
     width: 80%;
     max-width: 1000px;
-    height: 75%;
     left: 10%;
-    top: 12.5%;
+    top: calc(.5 * (100% - 562px));
     background-color: rgb(25, 25, 30);
     box-shadow: 25px 25px 50px black;
     opacity: 100%;
@@ -74,7 +73,6 @@
 }
 
 .summary-container {
-    font-size: 1.25rem;
     line-height: 1.5rem;
     margin: 1rem 0;
 }
@@ -106,7 +104,6 @@
 .certifications ul {
     list-style-type: disc !important;
     margin: 1rem 2rem;
-    font-size: 1.25rem;
 }
 
 ul a {
@@ -427,6 +424,16 @@ span {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .about-content-container {
+        flex-direction: column;
+    }
+    
+    .x-axis {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 96px;
+    }
 
     #project-title {
         font-size: 3rem !important;
