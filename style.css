@@ -591,6 +591,10 @@ span {
         font-size: 2rem;
     }
 
+    #project-title {
+        margin-top: 1rem;
+    }
+
     .link {
         /* display: none !important; */
     }
