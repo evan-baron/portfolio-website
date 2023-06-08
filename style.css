@@ -350,6 +350,10 @@ img {
     background-image: linear-gradient( rgba(255, 255, 0, 80%), rgba(255, 0, 140, 80%));
 }
 
+.cml-bl-bottom {
+    flex-wrap: wrap;
+}
+
 #plink-row {
     display: none;
 }
@@ -525,7 +529,7 @@ span {
     }
 
     .link {
-        display: none !important;
+        /* display: none !important; */
     }
 
     .top-left-box {
@@ -553,7 +557,7 @@ span {
     }
 
     .cml-content {
-        display: none;
+        display: block;
     }
 
     .content-middle-right {
