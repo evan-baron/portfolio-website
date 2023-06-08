@@ -34,6 +34,17 @@
     width: 100%;
 }
 
+.mobile-nav-container {
+    display: none;
+    padding-bottom: 1px;
+    background-image: linear-gradient(0.25turn,rgba(255, 0, 140, 80%), rgba(255, 255, 0, 80%));
+}
+
+.mobile-nav-bar {
+    display: flex;
+    padding: 16px 16px 15px 16px;
+}
+
 .about-me-container {
     display: none;
 }
@@ -504,6 +515,10 @@ span {
 
 @media screen and (max-width: 800px) {
 
+    .mobile-nav-container {
+        display: block;
+    }
+
     .svg2:hover {
         height: 2.1rem;
         width: 2.1rem;
@@ -557,6 +572,7 @@ span {
     }
 
     .content-top {
+        display: none;
         padding: 0;
         height: auto;
         margin: 1rem;
