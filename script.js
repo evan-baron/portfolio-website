@@ -82,18 +82,22 @@ let skills = [
     {
         name: 'HTML',
         proficiency: .95,
+        mastery: 'master'
     },
     {
         name: 'CSS',
         proficiency: .7,
+        mastery: 'proficient'
     },
     {
         name: 'JavaScript',
         proficiency: .35,
+        mastery: 'novice'
     },
     {
         name: 'Sql',
         proficiency: .75,
+        mastery: 'proficient'
     }
 ]
 
@@ -164,7 +168,7 @@ function aboutMe() {
     for (let i = 0; i<skills.length; i++) {
 
         let barDiv = document.createElement('div')
-        barDiv.setAttribute('class', `bar acg-bar-${i} row-${i}`)
+        barDiv.setAttribute('class', `bar acg-bar-${i} row-${i} ${skills[i].mastery}`)
         barDiv.setAttribute('id', `acg-bar-${i}`)
         barDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
         barDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
@@ -172,7 +176,7 @@ function aboutMe() {
         barDiv.style.width = `${400 * skills[i].proficiency}px`;
     
         let labelDiv = document.createElement('div')
-        labelDiv.setAttribute('class', `row-${i}`)
+        labelDiv.setAttribute('class', `row-${i} ${skills[i].mastery}`)
         labelDiv.setAttribute('id', `label-${i}`)
         labelDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
         labelDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
