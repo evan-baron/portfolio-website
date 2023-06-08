@@ -208,12 +208,12 @@ function disappear() {
 //hamburger menu function
 function hamburger() {
     let dropdown = document.getElementById('dropdown-menu');
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
+    if (dropdown.style.height == '300px') {
+        dropdown.style.height = '0px';
         document.getElementById('hamburger-background').style.display = 'none';
         document.getElementById('nav-bar').style.boxShadow = 'none';
     } else {
-        dropdown.style.display = 'block';
+        dropdown.style.height = '300px';
         document.getElementById('hamburger-background').style.display = 'block';
         document.getElementById('hamburger-background').style.boxShadow = 'inset 0 25px 50px black';
     }
