@@ -459,7 +459,13 @@ span {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
+
+    .about-me {
+        width: 75%;
+        left: 12.5%;
+        top: calc((100% - 794px)/2);
+    }
 
     .about-content-container {
         flex-direction: column;
