@@ -19,7 +19,7 @@ let project = [
                 linkType: 'href'
             },
             {
-                title: 'Github',
+                title: 'Github Repo',
                 link: 'https://github.com/evan-baron/portfolio-website',
                 linkType: 'href'
             }
@@ -48,7 +48,7 @@ let project = [
                 linkType: 'href'
             },
             {
-                title: 'Github',
+                title: 'Github Repo',
                 link: 'https://github.com/evan-baron/portfolio-website',
                 linkType: 'href'
             },
@@ -70,7 +70,7 @@ let project = [
                 linkType: 'href'
             },
             {
-                title: 'Github',
+                title: 'Github Repo',
                 link: 'https://github.com/evan-baron/portfolio-website',
                 linkType: 'href'
             }
