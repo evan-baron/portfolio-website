@@ -277,6 +277,7 @@ function dpShow() {
     }
 }
 
+//mobile about me section REMOVE PARTS INSIDE WHEN WEBSITE COMPLETE
 function dAboutMe() {
     document.getElementById('project-title').innerHTML = 'You caught me!';
     document.getElementById('project-content').innerHTML = `I haven't written a summary yet, so..... enjoy some random gibberish! <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.`;
@@ -284,4 +285,7 @@ function dAboutMe() {
     document.getElementById('dropdown-container').style.maxHeight = null;
     document.getElementById('hamburger-background').style.display = 'none';
     document.getElementById('hamburger-background').style.boxShadow = 'none';
+
+    //REMOVE THIS PART WHEN YOU ADD IN LINKS UNDER ABOUT ME
+    document.getElementById('plink-row').style.display = 'none';
 }
