@@ -322,6 +322,7 @@ function dAboutMe() {
 
 window.onresize = resize;
 
+//resize mobile to window and vice versa
 function resize()
 {
     let width = window.innerWidth;
