@@ -586,6 +586,13 @@ span {
     }
 }
 
+@media screen and (max-width: 935px) {
+    
+    .content-middle-left {
+        top: 100px;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .mobile-nav-container {
