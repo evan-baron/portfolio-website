@@ -338,12 +338,6 @@ function resize()
     }
 }
 
-// let width = window.innerWidth;
-
-// if (width > 800) {
-//     alert("test");
-// }
-
 //generates the graph for mobile about me
 function mobileGraph() {
     for (let i = 0; i<skills.length; i++) {
