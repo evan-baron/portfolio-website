@@ -200,10 +200,10 @@ ul a {
     line-height: 1.5;
 }
 
-.section-title:hover {
+/* .section-title:hover {
     opacity: 100%;
     font-weight: bold;
-}
+} */
 
 .x-axis {
     display: flex;
