@@ -2,7 +2,7 @@ let project = [
     {
         name: 'Welcome_',
         size: '5rem',
-        content: `Hello!<br><br>My name is Evan Baron and I am a junior software developer! I am transitioning my career out of sales and into software development. I have a rich understanding of how to work with clients, organize projects, and meet deadlines. For more information about me and my capabilities, click 'About' at the top (or in the dropdown if on mobile)!<br><br>Thanks for stopping by!<br>
+        content: `Hello!<br><br>My name is Evan Baron and I am a junior software developer! I am transitioning my career out of sales and into software development. I have a rich understanding of how to work with clients, organize projects, and meet deadlines. For more information about me and my capabilities, click 'About' at the top or in the dropdown if on mobile!<br><br>Thanks for stopping by!<br>
         <br>
         <div class='sig'></div>
         Evan Baron`,
@@ -92,7 +92,7 @@ let project = [
                 linkType: 'href'
             },
             {
-                title: 'You Found an Easter Egg!',
+                title: 'Easter Egg!',
                 link: './easter_egg.png',
                 linkType: 'href'
             }
@@ -184,6 +184,8 @@ function projectShow(projNum) {
 
 //loads projects onto page makes dropdown go away
 function dpProjectShow(dpNum) {
+    document.getElementById('content-middle').style.display = 'flex';
+    document.getElementById('mobile-about-container').style.display = 'none';
     projectShow(dpNum)
     document.getElementById('dp-container').style.maxHeight = null;
     document.getElementById('dropdown-container').style.maxHeight = null;
@@ -301,22 +303,75 @@ function dpShow() {
 
 //mobile about me section REMOVE PARTS INSIDE WHEN WEBSITE
 function dAboutMe() {
-    document.getElementById('project-title').innerHTML = 'You caught me!';
-    document.getElementById('project-content').innerHTML = `I haven't written a summary yet, so..... enjoy some random gibberish! <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.`;
+    document.getElementById('mobile-about-container').style.display = 'flex';
+    document.getElementById('content-middle').style.display = 'none';
+    // document.getElementById('project-title').innerHTML = 'You caught me!';
+    // document.getElementById('project-content').innerHTML = `I haven't written a summary yet, so..... enjoy some random gibberish! <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.`;
     document.getElementById('dp-container').style.maxHeight = null;
     document.getElementById('dropdown-container').style.maxHeight = null;
     document.getElementById('hamburger-background').style.display = 'none';
     document.getElementById('hamburger-background').style.boxShadow = 'none';
+
+    for (let i = 0; i<skills.length; i++) {
+        document.getElementById(`mobile-bar-${i}`) ? '' : mobileGraph();
+    }
 
     //REMOVE THIS PART WHEN YOU ADD IN LINKS UNDER ABOUT ME
     document.getElementById('plink-row').style.display = 'none';
 }
 
+window.onresize = resize;
+
+function resize()
+{
+    let width = window.innerWidth;
+
+    if (width > 800) {
+        document.getElementById('mobile-about-container').style.display = 'none';
+        document.getElementById('content-middle').style.display = 'flex';
+    }
+
+    if ((aboutMeDisplay.style.display == 'block') && (width < 800)) {
+        aboutMeDisplay.style.display = 'none';
+        dAboutMe();
+    }
+}
+
+// let width = window.innerWidth;
+
+// if (width > 800) {
+//     alert("test");
+// }
+
+//generates the graph for mobile about me
+function mobileGraph() {
+    for (let i = 0; i<skills.length; i++) {
+            let barDiv = document.createElement('div')
+            barDiv.setAttribute('class', `mobile-bar mobile-bar-${i} row-${i} ${skills[i].mastery}`)
+            barDiv.setAttribute('id', `mobile-bar-${i}`)
+            document.getElementById('mobile-acg-background').appendChild(barDiv)
+            barDiv.style.width = `${250 * skills[i].proficiency}px`;
+        
+            let labelDiv = document.createElement('div')
+            labelDiv.setAttribute('class', `mobile-row-${i} row-${i} ${skills[i].mastery}`)
+            labelDiv.setAttribute('id', `mobile-label-${i}`)
+            document.getElementById('mobile-acg-label-container').appendChild(labelDiv)
+            labelDiv.innerHTML = skills[i].name;
+    }
+}
+
 //gets back to homescreen on mobile
 function goHome() {
     projectShow(0)
+    document.getElementById('content-middle').style.display = 'flex';
+    document.getElementById('mobile-about-container').style.display = 'none';
     document.getElementById('dp-container').style.maxHeight = null;
     document.getElementById('dropdown-container').style.maxHeight = null;
     document.getElementById('hamburger-background').style.display = 'none';
     document.getElementById('hamburger-background').style.boxShadow = 'none';
+
+    for (let i = 0; i<skills.length; i++) {
+        document.getElementById('mobile-bar-'+i).remove();
+        document.getElementById('mobile-label-'+i).remove();
+    }
 }

@@ -41,6 +41,31 @@
     width: 100%;
 }
 
+#mobile-about-container {
+    display: none;
+}
+
+.mobile-about-container {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    gap: 1rem;
+}
+
+.mobile-about-container .section-title {
+    margin-top: .5rem;
+}
+
+.mobile-about-container .cml-top {
+    margin-bottom: 0;
+}
+
+.mobile-summary {
+    line-height: 1.5rem;
+}
+
 .mobile-nav-container {
     z-index: 3;
     display: none;
@@ -210,6 +235,61 @@ ul a {
     justify-content: space-between;
     align-self: flex-end;
     width: 401px;
+}
+
+.mobile-graph-container {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mobile-graph {
+    display: flex;
+    align-self: center;
+}
+
+.mobile-x-axis {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    /* margin-left: 98px; */
+    width: 250px;
+}
+
+.mobile-label-container {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0;
+    gap: 1rem;
+}
+
+.mobile-label-container div {
+    color: white;
+    opacity: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+    padding: 0 .5rem;
+}
+
+.mobile-bar {
+    background-image: linear-gradient(90deg, rgba(255, 0, 140, 80%), rgba(255, 255, 0, 100%));
+    opacity: 75%;
+    background-size: 250px;
+    height: 30px;
+}
+
+.mobile-acg-background {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    padding: .5rem 0;
+    gap: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .acg-label-container {
@@ -622,6 +702,10 @@ span {
 
 @media screen and (max-width: 800px) {
 
+    .mobile-about-container {
+        display: '';
+    }
+
     .mobile-nav-container {
         display: block;
     }
@@ -715,8 +799,9 @@ span {
     .content-bottom {
         position: relative;
         justify-content: center;
-        padding: 0;
+        padding-top: 2rem;
         height: 1rem;
+        min-height: 0px;
     }
     
     .img-box {
