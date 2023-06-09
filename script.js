@@ -212,27 +212,48 @@ function hamburger() {
     if (content.style.maxHeight) {
       //this is if the accordion is open
       content.style.maxHeight = null;
+      document.getElementById('dp-container').style.maxHeight = null;
       document.getElementById('hamburger-background').style.display = 'none';
       document.getElementById('hamburger-background').style.boxShadow = 'none';
+
     } else {
       //if the accordion is currently closed
       content.style.maxHeight = content.scrollHeight + "px";
       document.getElementById('hamburger-background').style.display = 'block';
       document.getElementById('hamburger-background').style.boxShadow = 'inset 0 25px 25px black';
-    }
+    }      
 }
 
 function hamburgerAway() {
+    document.getElementById('dp-container').style.maxHeight = null;
     document.getElementById('dropdown-container').style.maxHeight = null;
     document.getElementById('hamburger-background').style.display = 'none';
     document.getElementById('hamburger-background').style.boxShadow = 'none';
-    document.getElementById('dp-container').style.maxHeight = null;
 }
 
-//hamburger menu projects appear function
+//hamburger menu projects nested hamburger
 function dpShow() {
     let content = document.getElementById('dp-container');
     let oc = document.getElementById('dropdown-container');
+        
+    for (let i = 1; i<project.length; i++) {
+        if (document.getElementById(`dp-project-${i}`) == null) {
+            console.log('does not exist yet');
+
+            //projects load into nested hamburger
+            let dpDiv = document.createElement('div')
+            dpDiv.setAttribute('class', 'dp-project')
+            dpDiv.setAttribute('id', `dp-project-${i}`)
+            document.getElementById('dp-menu').appendChild(dpDiv)
+            dpDiv.innerHTML = project[i].name;
+        } 
+
+        if (document.getElementById(`dp-project-${i}`) == null) {
+            console.log('does not exist yet');
+        } else {
+            console.log('exists');
+        }   
+    }  
 
     if (content.style.maxHeight) {
       //this is if the accordion is open
@@ -242,27 +263,4 @@ function dpShow() {
       content.style.maxHeight = content.scrollHeight + "px";
       oc.style.maxHeight = '1000px';
     }
-}
-
-function projectsLoad() {
-    aboutMeDisplay.style.display = 'block';
-
-    for (let i = 0; i<skills.length; i++) {
-
-        let barDiv = document.createElement('div')
-        barDiv.setAttribute('class', `bar acg-bar-${i} row-${i} ${skills[i].mastery}`)
-        barDiv.setAttribute('id', `acg-bar-${i}`)
-        barDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
-        barDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
-        document.getElementById('acg-background').appendChild(barDiv)
-        barDiv.style.width = `${400 * skills[i].proficiency}px`;
-    
-        let labelDiv = document.createElement('div')
-        labelDiv.setAttribute('class', `row-${i} ${skills[i].mastery}`)
-        labelDiv.setAttribute('id', `label-${i}`)
-        labelDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
-        labelDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
-        document.getElementById('acg-label-container').appendChild(labelDiv)
-        labelDiv.innerHTML = skills[i].name;
-    } 
 }
