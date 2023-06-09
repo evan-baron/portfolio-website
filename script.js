@@ -9,7 +9,7 @@ let project = [
         links: []
     },
     {
-        name: 'Portfolio Page',
+        name: 'Portfolio Site',
         size: '3rem',
         content: `This portfolio website was my first 'true' project.<br><br>While progressing through the <span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a  class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Codecademy&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Fullstack&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Developer&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Course</a></span>, one of the first 'Capstone' projects was to build a porfolio website. The example they gave was quite poor, so I took it upon me to build something much more extravagant.<br><br>Everything you see on this page (except for the icons/SVG paths) has been built from scratch: no Bootstrap or libraries - this was a pure learning experience!`,
         links: [
