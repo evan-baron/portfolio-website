@@ -105,6 +105,13 @@
     padding: 1rem 2.5rem;
 }
 
+.dp-project:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(40, 40, 45);
+    color: rgba(255, 255, 255, 100%);
+}
+
 .about-me-container {
     display: none;
 }
