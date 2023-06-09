@@ -76,6 +76,7 @@
     z-index: 2;
     background-color: rgb(25, 25, 30);
     width: 250px;
+    /* height: 400px; */
 }
 
 .dropdown-section {
@@ -88,6 +89,20 @@
     font-weight: bold;
     background-color: rgb(40, 40, 45);
     color: rgba(255, 255, 255, 100%);
+}
+
+.dp-container {
+    display: block;
+    z-index: 2;
+    margin-top: 1px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.dp-project {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
 }
 
 .about-me-container {

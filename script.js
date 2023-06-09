@@ -226,25 +226,43 @@ function hamburgerAway() {
     document.getElementById('dropdown-container').style.maxHeight = null;
     document.getElementById('hamburger-background').style.display = 'none';
     document.getElementById('hamburger-background').style.boxShadow = 'none';
+    document.getElementById('dp-container').style.maxHeight = null;
 }
 
-//measuring width of text
-function getTextWidth(text, font) {
-    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
-    const context = canvas.getContext('2d');
-    context.font = font;
-    const metrics = context.measureText(text);
-    return metrics.width;
+//hamburger menu projects appear function
+function dpShow() {
+    let content = document.getElementById('dp-container');
+    let oc = document.getElementById('dropdown-container');
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      oc.style.maxHeight = '1000px';
+    }
 }
+
+function projectsLoad() {
+    aboutMeDisplay.style.display = 'block';
+
+    for (let i = 0; i<skills.length; i++) {
+
+        let barDiv = document.createElement('div')
+        barDiv.setAttribute('class', `bar acg-bar-${i} row-${i} ${skills[i].mastery}`)
+        barDiv.setAttribute('id', `acg-bar-${i}`)
+        barDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
+        barDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
+        document.getElementById('acg-background').appendChild(barDiv)
+        barDiv.style.width = `${400 * skills[i].proficiency}px`;
     
-function getCssStyle(element, prop) {
-        return window.getComputedStyle(element, null).getPropertyValue(prop);
-}
-    
-function getCanvasFont(el = document.body) {
-    const fontWeight = getCssStyle(el, 'font-weight') || 'normal';
-    const fontSize = getCssStyle(el, 'font-size') || '16px';
-    const fontFamily = getCssStyle(el, 'font-family') || 'Times New Roman';
-    
-    return `${fontWeight} ${fontSize} ${fontFamily}`;
+        let labelDiv = document.createElement('div')
+        labelDiv.setAttribute('class', `row-${i} ${skills[i].mastery}`)
+        labelDiv.setAttribute('id', `label-${i}`)
+        labelDiv.setAttribute('onmouseover', `toggleHighlight('row-${i}','over')`)
+        labelDiv.setAttribute('onmouseout', `toggleHighlight('row-${i}', 'out')`)
+        document.getElementById('acg-label-container').appendChild(labelDiv)
+        labelDiv.innerHTML = skills[i].name;
+    } 
 }
