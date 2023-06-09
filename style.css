@@ -53,6 +53,7 @@
     z-index: 1;
     background-color: black;
     opacity: 40%;
+    height: 100%;
     min-height: 670px;
     width: 100%;
     margin-top: 1px;
@@ -70,12 +71,17 @@
 }
 
 .dropdown-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     z-index: 2;
     background-color: rgb(25, 25, 30);
-    height: 400px;
     width: 250px;
-    margin-top: 1px;
+    padding: 1rem 1.5rem;
+}
+
+.dropdown-section {
+    font-size: 2rem;
 }
 
 .about-me-container {
