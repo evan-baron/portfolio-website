@@ -376,12 +376,6 @@ function goHome() {
     }
 }
 
-//stupid anchor in dropdown behaving bad... changes background color
-function changeBackground() {
-    document.getElementById('anchor').style.backgroundColor = 'rgb(40, 40, 45)';
-}
-
-//stupid anchor in dropdown behaving bad... changes background color back to original
-function changeBack() {
-    document.getElementById('anchor').style.backgroundColor = 'rgb(25, 25, 30)';
+function mailTo() {
+    window.location = "mailto:egbaron@gmail.com.com";
 }

@@ -109,7 +109,6 @@
     z-index: 2;
     background-color: rgb(25, 25, 30);
     width: 225px;
-    /* height: 400px; */
 }
 
 .dropdown-section {
@@ -117,12 +116,7 @@
     padding: 1rem 1.5rem;
 }
 
-.dropdown-section a {
-    background-color: rgb(25, 25, 30);
-    color: rgba(255, 255, 255, .85);
-}
-
-.dropdown-section:hover, .dropdown-section a:hover  {
+.dropdown-section:hover {
     cursor: pointer;
     font-weight: bold;
     background-color: rgb(40, 40, 45);
