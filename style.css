@@ -700,9 +700,9 @@ span {
         height: 3rem;
     }
     
-    .img-box:first-child {
+    /* .img-box:first-child {
         margin-right: auto;
-    }
+    } */
     
     .img-box:first-child img {
         width: 2rem;
@@ -723,12 +723,15 @@ span {
         height: 2rem;
     }
 
-    #home-icon {
-        display: none;
-    }
+    /* #home-icon {
+        width: 32px;
+        height: 32px;
+    } */
     
     #home-icon img {
-        display: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 4px;
     }
 }
 
