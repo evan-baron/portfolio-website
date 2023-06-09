@@ -371,6 +371,7 @@ function goHome() {
     }
 }
 
+//contact mailto
 function mailTo() {
     window.location = "mailto:egbaron@gmail.com.com";
 }
