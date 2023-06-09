@@ -11,7 +11,7 @@ let project = [
     {
         name: 'Portfolio Website',
         size: '2rem',
-        content: `This portfolio website was my first 'true' project.<br><br>While progressing through the <span class="external-link"><a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Codecademy Fullstack Developer Course</a></span>, one of the first 'Capstone' projects was to build a porfolio website. The example they gave was quite poor, so I took it upon me to build something much more extravagant.<br><br>Everything you see on this page (except for the icons/SVG paths) has been built from scratch: no Bootstrap or libraries - this was a pure learning experience!<br><br>Feel free to take a look at the code on my Github page below! :)`,
+        content: `This portfolio website was my first 'true' project.<br><br>While progressing through the <span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a  class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Codecademy&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Fullstack&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Developer&#160</a></span><span onmouseover="toggleHighlight('external-link', 'over')" onmouseout="toggleHighlight('external-link', 'out')"><a class="external-link" href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Course</a></span>, one of the first 'Capstone' projects was to build a porfolio website. The example they gave was quite poor, so I took it upon me to build something much more extravagant.<br><br>Everything you see on this page (except for the icons/SVG paths) has been built from scratch: no Bootstrap or libraries - this was a pure learning experience!<br><br>Feel free to take a look at the code on my Github page below! :)`,
         links: [
             {
                 title: 'View Site',
@@ -200,7 +200,7 @@ function toggleHighlight(className, mode) {
     let otherArr = document.getElementsByClassName(className);
     for (let i = 0; i<otherArr.length; i++) {
         let curObj = otherArr[i]
-        curObj.style.opacity = (mode == 'over' ? '100%' : '85%')
+        // curObj.style.opacity = (mode == 'over' ? '100%' : '85%')
         curObj.style.fontWeight = (mode == 'over' ? 'bold' : 'normal')
     }
 }
@@ -277,7 +277,7 @@ function dpShow() {
     }
 }
 
-//mobile about me section REMOVE PARTS INSIDE WHEN WEBSITE COMPLETE
+//mobile about me section REMOVE PARTS INSIDE WHEN WEBSITE
 function dAboutMe() {
     document.getElementById('project-title').innerHTML = 'You caught me!';
     document.getElementById('project-content').innerHTML = `I haven't written a summary yet, so..... enjoy some random gibberish! <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.`;
