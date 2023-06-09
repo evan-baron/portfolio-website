@@ -220,6 +220,8 @@ ul a {
 }
 
 .acg-label-container div {
+    color: white;
+    opacity: 85%;
     display: flex;
     align-items: center;
     justify-content: end;
