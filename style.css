@@ -63,7 +63,8 @@
 }
 
 .mobile-summary {
-    line-height: 1.5rem;
+    margin-top: .25rem;
+    line-height: 1.25rem;
 }
 
 .mobile-nav-container {
