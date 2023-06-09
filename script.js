@@ -9,7 +9,7 @@ let project = [
         links: []
     },
     {
-        name: 'Website 1',
+        name: 'Project 1',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
@@ -26,7 +26,7 @@ let project = [
         ]
     },
     {
-        name: 'Website 2',
+        name: 'Project 2',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas.',
         links: [
@@ -38,7 +38,7 @@ let project = [
         ]
     },
     {
-        name: 'Website 3',
+        name: 'Project 3',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris.',
         links: [
@@ -60,7 +60,7 @@ let project = [
         ]
     },
     {
-        name: 'Website 4',
+        name: 'Project 4',
         size: '2rem',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
         links: [
@@ -115,6 +115,7 @@ function typewriter() {
 
 window.addEventListener('load', typewriter);
 
+//setting project names
 for (let i = 0; i < project.length; i++) {
     document.getElementById('lc-'+[i]).innerHTML = project[i].name;
 }
