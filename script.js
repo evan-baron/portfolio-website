@@ -316,7 +316,6 @@ function dAboutMe() {
         document.getElementById(`mobile-bar-${i}`) ? '' : mobileGraph();
     }
 
-    //REMOVE THIS PART WHEN YOU ADD IN LINKS UNDER ABOUT ME
     document.getElementById('plink-row').style.display = 'none';
 }
 
