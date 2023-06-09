@@ -314,6 +314,30 @@ ul a {
     height: 4rem;
 }
 
+.about-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.about-icon {
+    font-size: 2rem;
+}
+
+.about-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+    background-image: linear-gradient(45deg, rgba(255, 0, 140, 100%), rgba(255, 255, 0, 100%));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
 .img-box:nth-child(2) {
     margin-right: auto;
 }
@@ -713,6 +737,7 @@ span {
         width: 1.5rem;
         height: 1.5rem;
     }
+
     #hamburger-menu {
         display: flex;
     }
