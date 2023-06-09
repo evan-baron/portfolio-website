@@ -289,3 +289,12 @@ function dAboutMe() {
     //REMOVE THIS PART WHEN YOU ADD IN LINKS UNDER ABOUT ME
     document.getElementById('plink-row').style.display = 'none';
 }
+
+//gets back to homescreen on mobile
+function goHome() {
+    projectShow(0)
+    document.getElementById('dp-container').style.maxHeight = null;
+    document.getElementById('dropdown-container').style.maxHeight = null;
+    document.getElementById('hamburger-background').style.display = 'none';
+    document.getElementById('hamburger-background').style.boxShadow = 'none';
+}
