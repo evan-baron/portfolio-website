@@ -160,6 +160,14 @@ function projectShow(projNum) {
     }
 }
 
+function dpProjectShow(dpNum) {
+    projectShow(dpNum)
+    document.getElementById('dp-container').style.maxHeight = null;
+    document.getElementById('dropdown-container').style.maxHeight = null;
+    document.getElementById('hamburger-background').style.display = 'none';
+    document.getElementById('hamburger-background').style.boxShadow = 'none';
+}
+
 let aboutMeDisplay = document.getElementById('about-me-container');
 
 //makes aboutme appear
@@ -245,6 +253,7 @@ function dpShow() {
             let dpDiv = document.createElement('div')
             dpDiv.setAttribute('class', 'dp-project')
             dpDiv.setAttribute('id', `dp-project-${i}`)
+            dpDiv.setAttribute('onclick', `dpProjectShow(${i})`)
             document.getElementById('dp-menu').appendChild(dpDiv)
             dpDiv.innerHTML = project[i].name;
         } 
