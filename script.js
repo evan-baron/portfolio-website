@@ -75,6 +75,28 @@ let project = [
                 linkType: 'href'
             }
         ]
+    },
+    {
+        name: 'Project 5',
+        size: '3rem',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
+        links: [
+            {
+                title: 'View Site',
+                link: '#',
+                linkType: 'href'
+            },
+            {
+                title: 'Github Repo',
+                link: 'https://github.com/evan-baron/portfolio-website',
+                linkType: 'href'
+            },
+            {
+                title: 'You Found A Cookie!',
+                link: '',
+                linkType: 'href'
+            }
+        ]
     }
 ];
 
