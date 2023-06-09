@@ -9,13 +9,13 @@ let project = [
         links: []
     },
     {
-        name: 'Project 1',
+        name: 'Portfolio Website',
         size: '2rem',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas. Duis dictum quam eget pharetra maximus.',
+        content: `This portfolio website was my first 'true' project.<br><br>While progressing through the <span class="external-link"><a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Codecademy Fullstack Developer Course</a></span>, one of the first 'Capstone' projects was to build a porfolio website. The example they gave was quite poor, so I took it upon me to build something much more extravagant.<br><br>Everything you see on this page (except for the icons/SVG paths) has been built from scratch: no Bootstrap or libraries - this was a pure learning experience!<br><br>Feel free to take a look at the code on my Github page below! :)`,
         links: [
             {
                 title: 'View Site',
-                link: 'https://www.google.com',
+                link: 'https://evan-baron.github.io/portfolio-website',
                 linkType: 'href'
             },
             {
@@ -160,6 +160,7 @@ function projectShow(projNum) {
     }
 }
 
+//loads projects onto page makes dropdown go away
 function dpProjectShow(dpNum) {
     projectShow(dpNum)
     document.getElementById('dp-container').style.maxHeight = null;
