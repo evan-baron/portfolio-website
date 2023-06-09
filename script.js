@@ -92,8 +92,8 @@ let project = [
                 linkType: 'href'
             },
             {
-                title: 'You Found A Cookie!',
-                link: '',
+                title: 'You Found an Easter Egg!',
+                link: './easter_egg.png',
                 linkType: 'href'
             }
         ]
