@@ -2,7 +2,7 @@ let project = [
     {
         name: 'Welcome_',
         size: '5rem',
-        content: `Hello!<br><br>My name is Evan Baron and I am a junior software developer! I am transitioning my career out of sales and into software development. I have a rich understanding of how to work with clients, organize projects, and meet deadlines. For more information about me, click the 'About' link to the right or in the drop down menu if you're on mobile!<br><br>Thanks for stopping by!<br>
+        content: `Hello!<br><br>My name is Evan Baron and I am a junior software developer! I am transitioning my career out of sales and into software development. I have a rich understanding of how to work with clients, organize projects, and meet deadlines. For more information about me and my capabilities, click 'About' at the top (or in the dropdown if on mobile)!<br><br>Thanks for stopping by!<br>
         <br>
         <div class='sig'></div>
         Evan Baron`,
