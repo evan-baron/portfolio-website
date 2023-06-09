@@ -108,12 +108,12 @@
     flex-direction: column;
     z-index: 2;
     background-color: rgb(25, 25, 30);
-    width: 300px;
+    width: 225px;
     /* height: 400px; */
 }
 
 .dropdown-section {
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 1rem 1.5rem;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .dp-project {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem 2.5rem;
 }
 
