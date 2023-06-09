@@ -254,7 +254,7 @@ ul a {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    /* margin-left: 98px; */
+    margin-left: 96px;
     width: 250px;
 }
 
