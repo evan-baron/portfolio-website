@@ -26,13 +26,18 @@ let project = [
         ]
     },
     {
-        name: 'Project 2',
+        name: 'Mockify',
         size: '3rem',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris. Cras consectetur urna sed vestibulum egestas.',
+        content: 'Mockify was a silly project I came up with on a random Friday night to save myself time and effort while... trolling my friends. The basic premise is: it is a text converter, primarily intended for silly/comedic use on text-based communication platforms (texting, forums, social media, etc.). The basic concepts learned/practiced were array methods and regex. Enjoy!',
         links: [
             {
                 title: 'View Site',
-                link: '#',
+                link: 'https://evan-baron.github.io/mockify/',
+                linkType: 'href'
+            },
+            {
+                title: 'Github Repo',
+                link: 'https://github.com/evan-baron/mockify',
                 linkType: 'href'
             }
         ]
@@ -126,6 +131,8 @@ let skills = [
 let messageArray = ['Welcome'];
 let textPosition = 0;
 let speed = 80;
+let curWord = 0;
+let curChar = 0;
 
 //typewriter effect
 function typewriter() {
