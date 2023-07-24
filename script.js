@@ -28,7 +28,7 @@ let project = [
     {
         name: 'Mockify',
         size: '3rem',
-        content: 'Mockify was a silly project I came up with on a random Friday night to save myself time and effort while... trolling my friends. The basic premise is: it is a text converter, primarily intended for silly/comedic use on text-based communication platforms (texting, forums, social media, etc.). The basic concepts learned/practiced were array methods and regex. Enjoy!',
+        content: 'Mockify was a silly project I came up with on a random Friday night to save myself time and effort while... trolling my friends. The basic premise is: it is a text converter, primarily intended for silly/comedic use on text-based communication platforms (texting, forums, social media, etc.).<br><br>Coding concepts learned/practiced were: array methods and regex. Enjoy!',
         links: [
             {
                 title: 'View Site',
@@ -43,23 +43,18 @@ let project = [
         ]
     },
     {
-        name: 'Project 3',
+        name: 'CT Spoof',
         size: '3rem',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ante, fermentum sit amet metus et, malesuada semper elit. Integer ipsum mauris, volutpat ac tellus nec, commodo scelerisque libero. Aliquam in magna mauris.',
+        content: 'CT Spoof is based off a coaching/feedback application from a previous sales company I worked for. Our leadership was exceedingly harsh in their grading scale, so a couple of friends and I would always mock each other with poor ratings. Once I learned to code, I was determined to make an app where we could put our words into an actual report card like the original app and enhance our jesting experience.<br><br>Coding concepts learned/practiced were: control flow, nested arrays/objects, dynamic color changing, element creation/deletion, custom attribute creation/manipulation, and more. Give it a try!',
         links: [
             {
-                title: 'View Site',
-                link: '#',
+                title: 'CT Spoof',
+                link: 'https://evan-baron.github.io/CT-Spoof',
                 linkType: 'href'
             },
             {
                 title: 'Github Repo',
-                link: 'https://github.com/evan-baron/portfolio-website',
-                linkType: 'href'
-            },
-            {
-                title: 'See in Google Play Store',
-                link: 'https://play.google.com/store/games',
+                link: 'https://github.com/evan-baron/CT-Spoof',
                 linkType: 'href'
             }
         ]
